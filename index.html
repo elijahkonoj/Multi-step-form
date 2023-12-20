@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi step form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/d27a7f8381.js"></script>
+</head>
+<body>
+<div class="container">
+ <div class="container-1">
+  <main>
+    <div class="info-container">
+  <div class="step-1">
+    <h1 class="num" id="num-1-1">1</h1><span class="info">step 1<br><p class="para"> your info</p></span>
+  </div>
+    <div class="step-1">
+    <h1 class="num" id="num-2">2</h1><span class="info">step 2 <br><p class="para">select plan</p></span>
+    </div>
+      <div class="step-1">
+    <h1 class="num" id="num-3">3</h1><span class="info">step 3<br><p class="para"> add ons</p></span>
+      </div>
+        <div class="step-1">
+         <h1 class="num" id="num-4">4</h1><span class="info">step 4<br><p class="para">summary</p></span>
+       </div>
+    </div>  
+ </main>
+    <div class="personal-info">
+        <form>
+         <h1>personal info</h1>
+         <p id="info-header">Please provide your name, email address and phone number</p>
+         <label for="name" id="lname">Name:</label><br>
+         <input type="text" id="name" placeholder="Abbey Adek" required><br>
+         <label for="email">Email Address:</label><br>
+         <input type="email" id="email" placeholder="abbeyadek@"><br>
+         <label for="phone">Phone Number:</label><br>
+         <input type="number" name="" id="pnum"  placeholder="e.g +234 806 742 917 2" required><br>
+         <button id="btn">Next step</button>
+        </form>
+    </div>
+</div>
+<div class="container-2">
+  <main>
+    <div class="info-container">
+     <div class="step-1">
+       <h1 class="num-1">1</h1><span class="info">step 1<br><p class="para"> your info</p></span>
+     </div>
+       <div class="step-1">
+       <h1 class="num" id="num-2-2">2</h1><span class="info">step 2 <br><p class="para">select plan</p></span>
+       </div>
+         <div class="step-1">
+       <h1 class="num" id="num-3-3">3</h1><span class="info">step 3<br><p class="para"> add ons</p></span>
+         </div>
+           <div class="step-1">
+            <h1 class="num" id="num-4-4">4</h1><span class="info">step 4<br><p class="para">summary</p></span>
+          </div>
+    </div>  
+  </main>
+
+ <div class="plan-selection">
+    <h1>Select your plan</h1>
+    <p id="plan-para">You have the option of monthly or yearly billing</p>
+    <div class="selectors">
+        <div class="arcade">
+         <i class="fa fa-joystick fa-2x"></i>
+         <h3>Arcade</h3>
+         <span>$9/mo</span>
+        </div>
+        <div class="advanced">
+         <i class="fa fa-gamepad fa-2x"></i>
+         <h3>Advanced</h3>
+         <span>$12/mo</span>
+        </div>
+        <div class="pro">
+        <i class="fa fa-gamepad-modern fa-2x"></i>  
+        <h3>Pro</h3>
+        <span>$15/mo</span>
+        </div>
+    </div>  
+        <div class="switch">
+            <p>Monthly</p>
+            <i class="fa fa-toggle-on fa-2x"></i>
+            <p id="years">Yearly</p>
+        </div>
+        <div class="btn-container">
+            <p onclick="myFunction()" id="back-btn">Go Back</p>
+            <button class="next-btn" type="button">Next step</button>
+        </div>
+ </div>  
+</div>
+<div class="container-3">
+ <main>
+   <div class="info-container">
+      <div class="step-1">
+        <h1 class="num-5-5">1</h1><span class="info">step 1<br><p class="para"> your info</p></span>
+      </div>
+      <div class="step-1">
+      <h1 class="num" id="num-2">2</h1><span class="info">step 2 <br><p class="para">select plan</p></span>
+      </div>
+        <div class="step-1">
+          <h1 class="num" id="num-3-5">3</h1><span class="info">step 3<br><p class="para"> add ons</p></span>
+        </div>
+          <div class="step-1">
+           <h1 class="num" id="num-4">4</h1><span class="info">step 4<br><p class="para">summary</p></span>
+          </div>
+   </div>  
+ </main>
+    <div class="pick-container">
+      <h1 id="pick-header">Pick add-ons</h1>
+      <p id="pick-para" >Add-ons helps enhance your gaming experience</p>
+        <div class="pickers">
+         <div class="online-services">
+           <input type="checkbox" checked>
+           <p>Online services</p>
+           <span id="online-para" >Access to multi player games</span>
+           <p class="unit">+ $1/mo</p>
+          </div>
+            <div class="storage">
+              <input class="checked" type="checkbox" checked>
+              <p>Larger storage</p>
+              <span id="storage-span" >Extra 1TB of cloud save</span>
+              <p class="unit">+ $2/mo</p>
+            </div>
+        <div class="custom-profile">
+          <input class="checked" type="checkbox">
+          <p>Customization profile</p>
+          <span id="custom-span" >Custom theme on your profile</span>
+          <p class="unit">+ $2/mo</p>
+        </div>
+           <div class="btn-container-2">
+             <p id="custom-next">Go Back</p>
+             <button id="btn-2" type="button">Next step</button>
+           </div>
+        </div>       
+ </div>
+</div>
+ <div class="container-4">
+  <main>
+    <div class="info-container">
+     <div class="step-1">
+       <h1 class="num" id="num-a">1</h1><span class="info">step 1<br><p class="para"> your info</p></span>
+     </div>
+       <div class="step-1">
+       <h1 class="num" id="num-2">2</h1><span class="info">step 2 <br><p class="para">select plan</p></span>
+       </div>
+         <div class="step-1">
+       <h1 class="num" id="num-3">3</h1><span class="info">step 3<br><p class="para"> add ons</p></span>
+         </div>
+           <div class="step-1">
+            <h1 class="num" id="num-4-5">4</h1><span class="info">step 4<br><p class="para">summary</p></span>
+          </div>
+    </div>  
+  </main>
+  <div class="summary">
+        <h1>Finishing up</h1>
+        <p id="summary-para">Double-check everything looks Ok before confirming</p>
+    <div class="total">
+      <div class="arcade-total">
+        <p id="arcade">Archade(Monthly)</p>
+        <span id="change-span">Change</span>
+        <p id="total-unit">$9/mo</p>
+      </div>
+      <hr>
+        <div class="online-products">
+            <p id="product-para">Online services</p>
+            <p id="product-storage">Larger storage</p>
+            <span id="total-unit-2">+$2/mo</span>
+        </div>
+    </div>    
+        <div class="btn-container-3">
+            <p id="finish-back">Go Back</p>
+            <button id="confirm-btn" type="button">Confirm</button>
+        </div>
+  </div>
+ </div> 
+</div>  
+<script src="index.js"></script>
+</body>
+</html>
